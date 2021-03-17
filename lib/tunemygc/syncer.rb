@@ -24,7 +24,7 @@ module TuneMyGc
           TuneMyGc.log(snapshot) if debug
           payload << snapshot
         end
-        data = ActiveSupport::JSON.encode(payload)
+        data = JSON.generate(payload)
         begin
           3.times do |retries|
             Timeout.timeout(NETWORK_TIMEOUT + 1) do

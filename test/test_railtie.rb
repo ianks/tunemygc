@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 require File.join(File.dirname(__FILE__), 'helper')
+require 'tunemygc/railtie'
 
 class TestRailtie < TuneMyGcTestCase
   def test_init

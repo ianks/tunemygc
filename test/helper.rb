@@ -5,6 +5,7 @@ ENV['RUBY_GC_TOKEN'] = 'testapp'
 require 'rails'
 require 'tunemygc'
 require "tunemygc/syncer"
+require "tunemygc/agent"
 require 'minitest/autorun'
 require 'webmock/minitest'
 require 'mocha/mini_test'
